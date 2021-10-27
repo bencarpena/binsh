@@ -1,0 +1,2 @@
+0 0-23 * * * /usr/sbin/ntpdate 172.16.15.151
+*/5 * * * * /home/ben/perl.d/scripts/prlog6.pl

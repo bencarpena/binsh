@@ -1,0 +1,5 @@
+1. locate the file "root" at /var/spool/cron/crontabs
+2. if exists, ok but if not, make one.
+3. make a file similar to the cron.set example.
+4. To schedule a job, issue the command crontab cron.set
+5. to view the job, issue the command crontab -l

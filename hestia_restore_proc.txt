@@ -1,0 +1,66 @@
+1. Shutdown Database
+2. Start Database
+3. Shutdown database
+4. backup /oracledb
+
+#cd /oracledb
+#tar cf - . | compress - > /var/backup/oracledb.tar.Z &
+
+5. backup /httpdata
+#cd /httpdata
+#tar cf - . | compress - > /var/backup/httpdata.tar.Z &
+
+
+6. comment Vfstab (c2d0)
+
+7. Reboot
+
+8. Shutdown
+
+9. Raid (normal conf)
+
+10. boot up
+
+11. Make new partition
+*using format command
+
+12. Make new filesystem
+#  newfs /dev/dsk/c2d0s0
+#  newfs /dev/dsk/c2d0s1
+
+13. Make directory for /oracledb & /httpdata
+#cd /           
+#mkdir oracledb
+#mkdir httpdata
+
+14. Mount /oracledb & /httpdata
+
+# mount -F ufs /dev/dsk/c2d0s(?) /httpdata
+# mount -F ufs /dev/dsk/c2d0s(?) /oracledb
+
+##RESTORE DATA##
+
+Restore database
+cd /oraclesb
+uncompress -c /var/backup/oracledb.tar.Z |tar xf - &
+
+
+Restore database
+cd /httpdata
+uncompress -c /var/backup/httpdata.tar.Z |tar xf - &
+
+
+##Starting oracle database "hrd"
+su -c oracle
+setenv ORACLE_SID hrd
+svrmgrl
+connect internal
+startup
+
+####Starting Listener Mode of oracledb
+su -c oracle
+cd /usr/local/oracle8i/bin
+./lsnrctl
+start
+status
+
