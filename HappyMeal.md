@@ -55,7 +55,7 @@
         - Returns a table: https://github.com/bencarpena/binsh/blob/main/sqls/pr_fn_COFDA_CostOfFinding.sql
         - Returns a value: https://github.com/bencarpena/binsh/blob/main/sqls/pr_fn_LeadP_Get_CostofFindingnDeveloping_RollingAvg.sql
 ---
-## Lego bricks (aka data products)
+## Lego bricks (aka data products; data products are ingredients of your Happy Meal!)
 - Form factor: SQL Views
     - dbo.vw_pr_ds8001_CP_BenchmarkingMetrics
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds5001_BenchmarkingMetrics.sql
