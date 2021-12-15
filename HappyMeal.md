@@ -9,7 +9,7 @@
     - Attributes - represented by columns
     - Values - represented by cells
 
-- Domain Model starter here: C:\Users\bcarpena\OneDrive - Tesla\docs\MyEHS\_DataEngineering\benchmarkingmetrics
+- Domain Model starter here: https://github.com/bencarpena/binsh/blob/main/ds0000_Domain_Model.xlsx
 ---
 ## Arch Notes 1 : Starter guides
 - Key design, engineering and solution architecture concepts
