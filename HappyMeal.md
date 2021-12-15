@@ -1,5 +1,5 @@
 # Happy Meal Protocol
-
+---
 ### Domain Model
 - Domain model (some literature call it Data Model)
 - Organizes benchmarking data into domains
