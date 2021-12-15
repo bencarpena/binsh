@@ -10,35 +10,40 @@
     - Values - represented by cells
 
 - Domain Model starter here: C:\Users\bcarpena\OneDrive - Tesla\docs\MyEHS\_DataEngineering\benchmarkingmetrics
-
-### Arch Notes 1 : Starter guides
+---
+## Arch Notes 1 : Starter guides
 - Key design, engineering and solution architecture concepts
 - https://github.com/bencarpena/benchmarking/blob/main/_bdf/_readme/bm_arch_01_archnotes.md
 
-### Arch Notes 2 : Optimized
+## Arch Notes 2 : Optimized
 - Data products must be optimized for consumption
 - https://github.com/bencarpena/benchmarking/blob/main/_bdf/_readme/bm_arch_02_designnotes.md
 
 
-### Arch Notes 3 : Data Ops
+## Arch Notes 3 : Data Ops
 - Data Ops and Data Factory
 - Refer to Level Up slides
 
-
-### Making it real
+---
+## Making it real
 > Concepts applied in the real world
 
-#### Data transformation flows
+### Data transformation flows
 - Data transformation flow : RAW --> REFINED --> PRODUCED --> ARCHIVED
 - Sample of produced data product: https://github.com/bencarpena/benchmarking/blob/main/_bdf/ds0000/vw_pr_ds0000_MasterDomainModel.sql
 
-#### Domain Model by-products
+
+### Domain Model by-products
 - We now have our :
     - One-stop-shop reference table
     - Decoder ring
     - Data catalogue
 
-#### Transformations and Enrichments
+- Codes (queries + stored procs) referencing Domain Model
+    - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds1001_COFDA_COFDAPerCountry.sql
+    - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_rf_ds5001_TransformAndEnrich_BenchmarkingMetrics.sql
+
+### Transformations and Enrichments
 - Key-enabler of automations in the data factory
     - Stored procedure with Cursor enabled
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_pr_ds5001_TransformAndEnrich_BenchmarkingMetrics.sql
@@ -49,8 +54,8 @@
     - User defined functions
         - Returns a table: https://github.com/bencarpena/binsh/blob/main/sqls/pr_fn_COFDA_CostOfFinding.sql
         - Returns a value: https://github.com/bencarpena/binsh/blob/main/sqls/pr_fn_LeadP_Get_CostofFindingnDeveloping_RollingAvg.sql
-
-#### Lego bricks (aka data products)
+---
+## Lego bricks (aka data products)
 - Form factor: SQL Views
     - dbo.vw_pr_ds8001_CP_BenchmarkingMetrics
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds5001_BenchmarkingMetrics.sql
