@@ -1,15 +1,5 @@
 # Happy Meal Protocol
----
-### Domain Model
-- Domain model (some literature call it Data Model)
-- Organizes benchmarking data into domains
-- Components:
-    - Domains - e.g. ESG, Security
-    - Items - represented by rows
-    - Attributes - represented by columns
-    - Values - represented by cells
 
-- Domain Model starter here: https://github.com/bencarpena/binsh/blob/main/ds0000_Domain_Model.xlsx
 ---
 ## Arch Notes 1 : Starter guides
 - Key design, engineering and solution architecture concepts
@@ -32,6 +22,16 @@
 - Data transformation flow : RAW --> REFINED --> PRODUCED --> ARCHIVED
 - Sample of produced data product: https://github.com/bencarpena/benchmarking/blob/main/_bdf/ds0000/vw_pr_ds0000_MasterDomainModel.sql
 
+### Domain Model
+- Domain model (some literature call it Data Model)
+- Organizes benchmarking data into domains
+- Components:
+    - Domains - e.g. ESG, Security
+    - Items - represented by rows
+    - Attributes - represented by columns
+    - Values - represented by cells
+
+- Domain Model starter here: https://github.com/bencarpena/binsh/blob/main/ds0000_Domain_Model.xlsx
 
 ### Domain Model by-products
 - We now have our :
