@@ -61,5 +61,9 @@
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds5001_BenchmarkingMetrics.sql
     - restricted.vw_pr_ds1201_Resources_ResourceInventory
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/restricted.t_pr_ds1201_ResourceInventory_Reserves.sql
+    - dbo.vw_pr_ds1103_RealizedPrice_Monthly
+        - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds1103_RealizedPrice_Monthly.sql
+    - dbo.vw_pr_ds1101_UnitOperatingCost_Monthly
+        - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/20200811_bak/vw_pr_ds1101_UnitOperatingCost_Monthly.sql
 - Form factor: Parquet files
     - Data stored in data lake in parquet file format
