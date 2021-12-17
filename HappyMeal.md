@@ -44,10 +44,13 @@
     - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_rf_ds5001_TransformAndEnrich_BenchmarkingMetrics.sql
 
 ### Transformations and Enrichments
+>Depending on the data we are working with, there will be multiple levels of transformations. The first step almost always involves flattening your dataset.
 - Key-enabler of automations in the data factory
-    - Stored procedure with Cursor enabled
+    - Level 1 transforms : Flatten your data (create the DNA aka building block for the lego brick)
+        - https://github.com/bencarpena/targetprocess/blob/main/sql/vw_rf_ds1101_aad_identities.sql
+    - Level 2 transforms : Stored procedure with Cursor enabled
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_pr_ds5001_TransformAndEnrich_BenchmarkingMetrics.sql
-    - Stored procedure
+    - Level 3 transforms : Stored procedures that hydrate and produce data products
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_pr_ds1201_TransformAndEnrich_Routine_20201015.sql
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/archived/sp_pr_ds1001_COFDA_GenerateSQLDataProducts.sql
         - https://github.com/bencarpena/benchmarking/blob/main/_bdf/tsqls/sp_pr_COFDA_Hyd_CostOfFinding.sql
